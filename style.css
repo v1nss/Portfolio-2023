@@ -1,4 +1,9 @@
-@import url("//assets/fonts/AVONE.otf");
+/* @import url("//assets/fonts/AVONE.otf"); */
+
+@font-face {
+  font-family: avone;
+  src: url("./assets/fonts/AVONE.otf");
+}
 
 @font-face {
     font-family: bebas neue;
@@ -8,9 +13,11 @@
 body{
     font-family: "bebas neue";
     background-color:rgb(255, 255, 255);
+    overflow-x: hidden;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-
 
 html {
     scroll-behavior: smooth;
@@ -62,58 +69,72 @@ a:hover {
 }
 
 .section__pic-container{
-    position: absolute;
-    right: 0px;
-    top: 0px;
+  display:flex;
+  justify-content: flex-end;
+    /* position: absolute; */
+  transform: translate(20px, -400px);
     z-index: -1;
 }
 
 .section__text__p1{
-  padding-top: 25px;
+  
+  transform: translate(0px, 90px);
+  /* padding-top: 250px; */
+  /* padding-bottom: 10px; */
   padding-left: 30px;
-  position: absolute;
+  /* position: absolute; */
   font-size: 25px;
 }
 
 .section__text__p2{
   padding-left: 30px;
-  position: absolute;
+  /* padding-top: 30px; */
+  /* position: absolute; */
   font-size: 15px;
+  transform: translate(0px, 10px);
 }
 
 .section__text {
+  flex-wrap: wrap;
     /* align-self: center; */
-    padding-top: 150px;
-    padding-left: 350px;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(360px, 120px);
+    /* padding-top: 150px; */
+    /* padding-left: 350px; */
     /* height: 60px; */
     /* position: absolute; */
     /* text-align: center; */
 }
 
 .title{
-    font-family: AVONE;
-    font-size: 90px;
-    height: 10px;
+  font-family: avone;
+  font-size: 90px;
+  height: 500px;
 }
 
 #socials-container {
-    position: absolute;
-    display: flex;
-    /* justify-content: center; */
-    /* margin-top: 1rem; */
-    gap: 1.5rem;
-    height:30px;
-    right: 980px;
-    bottom: 60px;
+  transform: translate(780px, 525px); 
+  /* position: absolute; */
+  display: flex;
+  /* justify-content: center; */
+  /* margin-top: 1rem; */
+  gap: 1.5rem;
+  height:40px;
+  width: 40px;
+  /* align-items: center; */
   }
 
 #designContainer{
-  position: absolute;
-  bottom: 0px;
+  padding-top: 100px;
+  display: flex;
+  /* gap: 1000px; */
+  align-items: flex-end;
 }
 
 .home{
-  position: absolute;
+  /* position: absolute; */
+  align-items: flex-end;
   font-size: 21px;
   font-family: Bebas Neue;
   font-weight: 400;
@@ -124,9 +145,11 @@ a:hover {
 }
 
 .shape1{
-  position: absolute;
+  /* position: absolute;
   left: 50px;
-  bottom: 100px;
+  bottom: 100px; */
+  /* display: flex; */
+  /* align-items: flex-start; */
   width: 193px;  
   height: 100%; 
   transform: rotate(-90deg); 
@@ -135,12 +158,36 @@ a:hover {
 }
 
 .shape2{
-  position: absolute;
+  /* position: absolute;
   left: 1650px;
-  bottom: 60px;
+  bottom: 60px; */
   width: 193px;  
   height: 100%; 
+  
   /* transform: rotate(-90deg);  */
   transform-origin: 0 0; 
   border: 3px black solid;
+}
+
+#about {
+  display: flex;
+}
+
+.about-text{
+  font-family: avone;
+  font-size: 90px;
+  /* align-self: center; */
+}
+
+.skills-container{
+  position: relative;
+  /* width: 1920px; 
+  height: 1080px;  */
+  background: black;
+}
+
+.shit{
+  height: 500px;
+  display: flex;
+  align-items: center;
 }
