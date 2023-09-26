@@ -20,7 +20,7 @@ body{
     font-family: "bebas neue";
     background-color:rgb(255, 255, 255);
     overflow-x: hidden;
-    background: url("./assets/bg1.png");
+    background: url("./assets/bg2.png");
     background-repeat: no-repeat;
     /* background-size: contain; */
 }
@@ -109,7 +109,7 @@ a:hover {
     /* align-self: center; */
     flex-direction: column;
     align-items: center;
-    transform: translate(360px, 120px);
+    transform: translate(470px, 120px);
     /* padding-top: 150px; */
     /* padding-left: 350px; */
     /* height: 60px; */
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .title{
-  font-family: avone;
+  font-family: avone stencil;
   font-size: 90px;
   /* height: 500px; */
 }
@@ -185,9 +185,9 @@ a:hover {
   border: 3px black solid;
 }
 
-.shit{
+.about-container{
   width: 1920px;
-  height: 1080px;  
+  height: 880px;  
   background: black;
   /* display: flex; */
   /* justify-content: center; */
@@ -195,9 +195,12 @@ a:hover {
   /*  */
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 100px;
-  /* align-items: center; */
-  /* gap: 25%; */
+  padding-top: 120px;
+
+}
+
+.about{
+ align-items: center;
 }
 
 .about-text{
@@ -207,6 +210,7 @@ a:hover {
   color: white;
   /* padding-top: 30px; */
   margin: 0px;
+  padding-left: 60px;
   /* flex-grow: 1; */
   /* align-self: center; */
 }
@@ -230,7 +234,7 @@ a:hover {
   flex-direction: column;
   justify-content:space-around;
   gap: 100px;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   padding-right: 20px;
 }
 
@@ -275,7 +279,7 @@ a:hover {
   margin: 0px;
 }
 
-.education h2 {
+.date {
   font-family:  poppins;
   color:rgb(255, 255, 255);
   font-size: 21px;
@@ -283,13 +287,16 @@ a:hover {
   /* padding-top: 20px; */
   font-weight: 20;
   margin: 0px;
+  
 }
 
 .school{
-  font-family:  poppins;
+  font-family:  poppins light;
   color:rgb(255, 255, 255);
   font-size: 22px;
   padding-left: 50px;
+  font-weight: bold;
+  margin: 0px;
   /* padding-top: 20px; */
 }
 
@@ -314,3 +321,79 @@ a:hover {
   border-radius: 55px;
 } */
 
+.skills{
+  /* align-items: flex-end; */
+  width: 1920px;
+  height: 2160px;  
+  background: #d0ccbf;
+  /* display: flex; */
+  /* justify-content: center; */
+  display: flex;
+  /*  */
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 0px; */
+  row-gap:  1px;
+  /* row-gap:  10px; */
+}
+
+.skills-tech{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  column-gap: 200px;
+  row-gap: 20px;
+  height: 665px;
+  /* background-color: aqua; */
+  /* margin-top: 150px; */
+  margin-left: 100px;
+  margin-right: 100px;
+  /* margin-bottom: 0px;  */
+  margin-bottom: -500px;
+}
+
+.box{
+  width: 250px;
+  height: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  /* margin:20px; */
+}
+
+.skills-middle{
+  /* display: flex;
+  align-items: flex-end; */
+  /* background-color: rgb(0, 255, 68); */
+  /* padding-bottom: 500px;
+  padding-left: 800px; */
+  margin: 0px;
+  height: 100px;
+  margin-left: 800px;
+}
+.skill-text{
+  font-family: Avone;
+  font-size: 250px;
+  margin: 0px;
+  
+}
+
+.skills-creative{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  column-gap: 200px;
+  row-gap: 20px;
+  height: 665px;
+  /* background-color: aqua; */
+  margin-top: -300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* padding-bottom: 1000px; */
+}
