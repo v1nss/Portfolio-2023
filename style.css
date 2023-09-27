@@ -324,7 +324,7 @@ a:hover {
 .skills{
   /* align-items: flex-end; */
   width: 1920px;
-  height: 2160px;  
+  height: 1740px;  
   background: #d0ccbf;
   /* display: flex; */
   /* justify-content: center; */
@@ -339,7 +339,7 @@ a:hover {
 }
 
 .skills-tech{
-  padding-top: 30px;
+  padding-top: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -370,7 +370,9 @@ a:hover {
   /* background-color: rgb(0, 255, 68); */
   /* padding-bottom: 500px;
   padding-left: 800px; */
-  margin: 0px;
+  /* margin: 0px; */
+  margin-top: 500px;
+  margin-bottom: 500px;
   height: 100px;
   margin-left: 800px;
 }
@@ -396,4 +398,39 @@ a:hover {
   margin-left: 100px;
   margin-right: 100px;
   /* padding-bottom: 1000px; */
+}
+
+.project{
+  width: 1920px;
+  height: 976px;
+  background-color: black;
+  
+}
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  gap: 40px;
+  padding-top: 40px;
+  padding-left: 400px;
+}
+
+.box-project{
+  width: 460px;
+  height: 700px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.project-lower{
+  padding-left:40px;
+  padding-top:20px;
+}
+
+.project-lower h1{
+  color: white;
+  font-family: Avone;
+  font-size: 165px;
+  margin: 0px;
 }
