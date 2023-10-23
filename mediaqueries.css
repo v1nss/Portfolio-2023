@@ -1,0 +1,22 @@
+@media (min-width: 1201px) {
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .back img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-width: 337px) {
+    body{
+        /* background-size: auto; */
+    }
+
+    .profile{
+
+    }
+    
+}
